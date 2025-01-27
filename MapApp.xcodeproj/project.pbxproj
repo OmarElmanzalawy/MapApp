@@ -15,6 +15,7 @@
 		04CD90682D47F7590068D4DE /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD90672D47F7590068D4DE /* LocationsDataService.swift */; };
 		04CD906A2D47FEBD0068D4DE /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD90692D47FEBD0068D4DE /* LocationsView.swift */; };
 		04CD906C2D4803370068D4DE /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD906B2D4803370068D4DE /* LocationsViewModel.swift */; };
+		04CD906E2D4818F00068D4DE /* LocationsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD906D2D4818F00068D4DE /* LocationsMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		04CD90672D47F7590068D4DE /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		04CD90692D47FEBD0068D4DE /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		04CD906B2D4803370068D4DE /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		04CD906D2D4818F00068D4DE /* LocationsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				04CD90692D47FEBD0068D4DE /* LocationsView.swift */,
+				04CD906D2D4818F00068D4DE /* LocationsMenu.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				04CD906C2D4803370068D4DE /* LocationsViewModel.swift in Sources */,
 				04CD90542D47F1660068D4DE /* ContentView.swift in Sources */,
 				04CD906A2D47FEBD0068D4DE /* LocationsView.swift in Sources */,
+				04CD906E2D4818F00068D4DE /* LocationsMenu.swift in Sources */,
 				04CD90662D47F6120068D4DE /* Location.swift in Sources */,
 				04CD90522D47F1660068D4DE /* MapApp.swift in Sources */,
 			);

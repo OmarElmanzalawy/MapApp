@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import MapKit
 
 class LocationsViewModel: ObservableObject{
@@ -29,9 +30,11 @@ class LocationsViewModel: ObservableObject{
     }
     
     private func updateMapRegion(location: Location){
-        mapRegion = MKCoordinateRegion(
-            center: location.coordinates,
-            span: mapSpan
-        )
+        withAnimation{
+            mapRegion = MKCoordinateRegion(
+                center: location.coordinates,
+                span: mapSpan
+            )
+        }
     }
 }
