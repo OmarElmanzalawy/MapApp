@@ -27,6 +27,7 @@ struct LocationsView: View {
                 .shadow(color: Color.black,radius: 20,x:0,y:15)
                 .padding()
                 Spacer()
+                LocationPreviewView(location: vm.mapLocation)
             }
         }
     }
