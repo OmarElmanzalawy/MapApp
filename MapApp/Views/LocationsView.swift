@@ -15,15 +15,17 @@ struct LocationsView: View {
     var body: some View {
         ZStack{
             Map(coordinateRegion: $vm.mapRegion)
+                .padding(.vertical,-100)
+                .clipped()
             .ignoresSafeArea()
+            
             
             VStack{
                 header
-                .background(.thinMaterial)
+                .background(.thickMaterial)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .shadow(color: Color.black,radius: 20,x:0,y:15)
                 .padding()
-                
                 Spacer()
             }
         }
@@ -39,21 +41,29 @@ extension LocationsView{
     
     private var header: some View{
         
-        VStack{
-            Text(vm.mapLocation.name + ", " + vm.mapLocation.cityName)
-                .fontWeight(.black)
-                .font(.title2)
-                .foregroundStyle(.primary)
-                .frame(height: 55)
-                .frame(maxWidth: .infinity)
-                .overlay(alignment: .leading) {
-                    Image(systemName: "arrow.down")
-                        .font(.headline)
-                        .foregroundStyle(.primary)
-                        .padding()
-                }
-            
+        VStack {
+            Button(action: vm.toogleLocationsMenu) {
+                Text(vm.mapLocation.name + ", " + vm.mapLocation.cityName)
+                    .fontWeight(.black)
+                    .font(.title2)
+                    .foregroundStyle(.black)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .animation(.none, value: vm.mapLocation)
+                    .overlay(alignment: .leading) {
+                        Image(systemName: "arrow.down")
+                            .font(.headline)
+                            .foregroundStyle(.black)
+                            .padding()
+                            .rotationEffect(Angle(degrees: vm.showLocationsMenu ? 180 : 0))
+                    }
+                
+            }
+            if(vm.showLocationsMenu){
+                LocationsMenu()
+            }
         }
+      
         
     }
     
