@@ -14,11 +14,19 @@ struct LocationsView: View {
     
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $vm.mapRegion)
+//            Map(coordinateRegion: $vm.mapRegion)
+            Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.locations, annotationContent: { location in
+                MapAnnotation(coordinate: location.coordinates) {
+                    MapAnnotationView()
+                        .scaleEffect(location == vm.mapLocation ? 1 : 0.7)
+                        .onTapGesture {
+                            vm.showNextLocation(location: location)
+                        }
+                }
+            })
                 .padding(.vertical,-100)
                 .clipped()
             .ignoresSafeArea()
-            
             
             VStack{
                 header
@@ -27,7 +35,15 @@ struct LocationsView: View {
                 .shadow(color: Color.black,radius: 20,x:0,y:15)
                 .padding()
                 Spacer()
-                LocationPreviewView(location: vm.mapLocation)
+                ForEach(vm.locations){ location in
+                    if(location == vm.mapLocation){
+                        LocationPreviewView(location: vm.mapLocation)
+                            .shadow(color: .black.opacity(0.3),radius: 20)
+                            .padding()
+                            .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                    }
+                }
+                
             }
         }
     }

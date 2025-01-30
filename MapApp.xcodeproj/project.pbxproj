@@ -17,6 +17,7 @@
 		04CD906C2D4803370068D4DE /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD906B2D4803370068D4DE /* LocationsViewModel.swift */; };
 		04CD906E2D4818F00068D4DE /* LocationsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD906D2D4818F00068D4DE /* LocationsMenu.swift */; };
 		04CD90702D493D0C0068D4DE /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD906F2D493D0C0068D4DE /* LocationPreviewView.swift */; };
+		04CD90722D4BF9880068D4DE /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD90712D4BF9880068D4DE /* MapAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		04CD906B2D4803370068D4DE /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		04CD906D2D4818F00068D4DE /* LocationsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsMenu.swift; sourceTree = "<group>"; };
 		04CD906F2D493D0C0068D4DE /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		04CD90712D4BF9880068D4DE /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				04CD90692D47FEBD0068D4DE /* LocationsView.swift */,
 				04CD906D2D4818F00068D4DE /* LocationsMenu.swift */,
 				04CD906F2D493D0C0068D4DE /* LocationPreviewView.swift */,
+				04CD90712D4BF9880068D4DE /* MapAnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				04CD90542D47F1660068D4DE /* ContentView.swift in Sources */,
 				04CD906A2D47FEBD0068D4DE /* LocationsView.swift in Sources */,
 				04CD906E2D4818F00068D4DE /* LocationsMenu.swift in Sources */,
+				04CD90722D4BF9880068D4DE /* MapAnnotationView.swift in Sources */,
 				04CD90662D47F6120068D4DE /* Location.swift in Sources */,
 				04CD90522D47F1660068D4DE /* MapApp.swift in Sources */,
 			);
